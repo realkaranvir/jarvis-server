@@ -1,0 +1,30 @@
+{
+  "llm": {
+    "default": "glm",
+    "servers": {
+      "glm": {
+        "base_url": "http://127.0.0.1:8080/v1",
+        "model": "GLM-4.7-Flash-Q8_0.gguf"
+      },
+      "vision": {
+        "base_url": "http://127.0.0.1:8081/v1",
+        "model": "Qwen3-VL-4B-Instruct-Q8_0.gguf"
+      }
+    }
+  },
+  "stt": {
+    "provider": "openai-compatible",
+    "base_url": "http://127.0.0.1:8090/v1",
+    "model": "mlx-community/whisper-large-v3-turbo-asr-fp16",
+    "language": "en",
+    "timeout_seconds": 120
+  },
+  "vad": {
+    "mode": 2,
+    "frame_duration_ms": 30,
+    "prefix_padding_ms": 300,
+    "silence_duration_ms": 600,
+    "min_speech_duration_ms": 300,
+    "max_speech_duration_seconds": 60
+  }
+}

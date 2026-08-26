@@ -1,7 +1,3 @@
-from fastapi import FastAPI
+from jarvis_server.app import app, create_app
 
-app = FastAPI()
-
-@app.get("/")
-async def root():
-    return {"message": "Hello world!"}
+__all__ = ["app", "create_app"]

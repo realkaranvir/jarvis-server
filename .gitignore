@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Machine-local service configuration
+config.json

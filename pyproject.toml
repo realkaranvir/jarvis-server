@@ -6,4 +6,9 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi[standard]>=0.141.1",
+    "httpx>=0.28.1",
+    "webrtcvad-wheels>=2.0.14",
 ]
+
+[tool.fastapi]
+entrypoint = "jarvis_server.app:app"
